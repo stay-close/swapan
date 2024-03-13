@@ -1,0 +1,46 @@
+/* ======== Roboto google fonts ========*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* ======== global css ========*/
+
+:root {
+  --primary-font: "Roboto", sans-serif;
+  --body-bg-clr: #15191a;
+  --section-bg-clr: #212223;
+  --theme-clr: #00bc91;
+--heading-text-clr:#fff;
+  --para-text-clr:#999;
+}
+
+/* ======== global css ========*/
+
+/* ======== common css ========*/
+
+/* ======== common css ========*/
+
+/* ======== reset css ========*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+body,
+html {
+  scroll-behavior: smooth;
+  background-color: var(--body-bg-clr);
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+/* ======== reset css ========*/
