@@ -42,6 +42,9 @@ ol {
   padding: 0;
   list-style-type: none;
 }
+a {
+  text-transform: capitalize;
+}
 a.btn {
   text-decoration: none;
   display: inline-block;
@@ -51,7 +54,7 @@ a.btn {
   line-height: 20px;
   background-color: var(--theme-clr);
   color: var(--heading-text-clr);
-  padding: 20px;
+  padding: 15px 20px;
   border: 2px solid var(--theme-clr);
   transition: all 0.3s linear;
 }
@@ -61,13 +64,20 @@ a.btn:hover {
   border: 2px solid var(--theme-clr);
 }
 h2 {
-  font-size: var(--heading-font-size);
+  text-transform: capitalize;
+  font-size: var(--primary-heading-font-size);
   font-weight: var(--font-weight-600);
   line-height: var(--heading-line-height);
   color: var(--heading-text-clr);
 }
 h2 span {
   color: var(--theme-clr);
+}
+h3 {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: var(--heading-text-clr);
 }
 h4 {
   font-size: var(--secendary-heading-font-size);
@@ -87,6 +97,10 @@ p {
   line-height: var(--para-line-height);
   color: var(--para-text-clr);
 }
+p span {
+  font-weight: var(--font-weight-500);
+  color: var(--heading-text-clr);
+}
 img {
   width: 100%;
   height: 100%;
@@ -95,22 +109,23 @@ img {
 .container {
   max-width: 95%;
 }
-
+.section_bg {
+  background-color: var(--section-bg-clr);
+  padding: 20px;
+  border-radius: 10px;
+}
 /* ======== reset and common css ========*/
 
 /* ====== Introduce section css====== */
 
 /* profile intro */
-.introduction_area .col-6 {
-  border-left: 2px solid #2d2e2f;
-}
+
 .my_intro {
   background-color: var(--section-bg-clr);
   padding: 15px;
   max-width: 450px;
   border-radius: 10px;
   clip-path: polygon(0 0, 55% 0, 62% 6%, 100% 6%, 100% 100%, 0 100%);
-  box-shadow: 0 5px 20px red;
 }
 .profile {
   border-bottom: 2px solid #2d2e2f;
@@ -144,4 +159,85 @@ img {
 }
 
 /* profile intro */
+
 /* ====== Introduce section css====== */
+
+/* ====Main content area css */
+
+/* home area */
+
+h3.section_heading {
+  border: 2px solid #2d2e2f;
+  padding: 7px 25px;
+  display: inline-block;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
+h3.section_heading i {
+  color: var(--theme-clr);
+  margin-right: 10px;
+}
+.home_content {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  justify-content: space-between;
+  align-items: center;
+}
+.home_content .profile_img img {
+  filter: grayscale(100%);
+}
+.availabality p i {
+  margin-right: 10px;
+  color: var(--theme-clr);
+}
+.hire_btn a.btn {
+  padding: 15px 35px;
+  font-size: 16px;
+}
+/* home area */
+
+/* ====Main content area css end */
+
+/* ====== Menu section CSS ====== */
+
+.main_menu_area {
+  border: 2px solid #2d2e2f;
+  max-width: fit-content;
+  border-radius: 50px;
+  padding: 20px;
+  text-align: center;
+  height: fit-content;
+}
+.main_menu_area nav a {
+  color: var(--heading-text-clr);
+  position: relative;
+
+  text-align: left;
+}
+.main_menu_area nav a:hover {
+  color: var(--theme-clr);
+}
+.main_menu_area nav a span {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -110%;
+  border: 1px solid #2d2e2f;
+  padding: 5px 7px;
+  border-radius: 5px;
+}
+.main_menu_area nav a:hover span {
+  display: block;
+}
+.main_menu_area nav a i {
+  font-size: 18px;
+}
+.main_menu_area .navbar-brand {
+  font-size: var(--primary-heading-font-size);
+  color: var(--theme-clr);
+  margin-right: 0;
+}
+.main_menu_area .navbar-brand span {
+  display: none;
+}
+/* ====== Menu section CSS ====== */
