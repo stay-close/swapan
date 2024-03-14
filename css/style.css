@@ -1,24 +1,29 @@
 /* ======== Roboto google fonts ========*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* ======== global css ========*/
 
 :root {
-  --primary-font: "Roboto", sans-serif;
+  --primary-font: "Poppins", sans-serif;
+  --primary-heading-font-size: 48px;
+  --secendary-heading-font-size: 24px;
+  --para-font-size: 16px;
+  --primary-heading-line-height: 60px;
+  --secendary-heading-line-height: 32px;
+  --para-line-height: 30px;
+  --font-weight-600: 600;
+  --font-weight-500: 500;
+  --para-font-weight: 400;
   --body-bg-clr: #15191a;
   --section-bg-clr: #212223;
   --theme-clr: #00bc91;
---heading-text-clr:#fff;
-  --para-text-clr:#999;
+  --heading-text-clr: #fff;
+  --para-text-clr: #999;
 }
 
 /* ======== global css ========*/
 
-/* ======== common css ========*/
-
-/* ======== common css ========*/
-
-/* ======== reset css ========*/
+/* ======== reset and common css ========*/
 
 * {
   margin: 0;
@@ -37,10 +42,106 @@ ol {
   padding: 0;
   list-style-type: none;
 }
-a {
+a.btn {
   text-decoration: none;
   display: inline-block;
   text-transform: capitalize;
+  font-weight: var(--font-weight-600);
+  font-size: 14px;
+  line-height: 20px;
+  background-color: var(--theme-clr);
+  color: var(--heading-text-clr);
+  padding: 20px;
+  border: 2px solid var(--theme-clr);
+  transition: all 0.3s linear;
+}
+a.btn:hover {
+  color: var(--theme-clr);
+  background: transparent;
+  border: 2px solid var(--theme-clr);
+}
+h2 {
+  font-size: var(--heading-font-size);
+  font-weight: var(--font-weight-600);
+  line-height: var(--heading-line-height);
+  color: var(--heading-text-clr);
+}
+h2 span {
+  color: var(--theme-clr);
+}
+h4 {
+  font-size: var(--secendary-heading-font-size);
+  font-weight: var(--font-weight-500);
+  line-height: var(--secendary-heading-line-height);
+  color: var(--heading-text-clr);
+}
+h5 {
+  color: var(--heading-text-clr);
+  font-size: 14px;
+  font-weight: var(--font-weight-500);
+  line-height: 20px;
+}
+p {
+  font-size: var(--para-font-size);
+  font-weight: var(--para-font-weight);
+  line-height: var(--para-line-height);
+  color: var(--para-text-clr);
+}
+img {
+  width: 100%;
+  height: 100%;
 }
 
-/* ======== reset css ========*/
+.container {
+  max-width: 95%;
+}
+
+/* ======== reset and common css ========*/
+
+/* ====== Introduce section css====== */
+
+/* profile intro */
+.introduction_area .col-6 {
+  border-left: 2px solid #2d2e2f;
+}
+.my_intro {
+  background-color: var(--section-bg-clr);
+  padding: 15px;
+  max-width: 450px;
+  border-radius: 10px;
+  clip-path: polygon(0 0, 55% 0, 62% 6%, 100% 6%, 100% 100%, 0 100%);
+  box-shadow: 0 5px 20px red;
+}
+.profile {
+  border-bottom: 2px solid #2d2e2f;
+}
+.profile .img_box {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #2d2e2f;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.profile_details ul,
+.profile_details ul li,
+.skills ul {
+  display: flex;
+}
+.profile_details ul {
+  flex-direction: column;
+}
+.profile_details ul li {
+  justify-content: space-between;
+}
+.profile_skills {
+  padding: 15px;
+  background-color: #2d2e2f;
+  border-radius: 10px;
+}
+.skills ul {
+  justify-content: space-between;
+}
+
+/* profile intro */
+/* ====== Introduce section css====== */
