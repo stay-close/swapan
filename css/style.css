@@ -121,7 +121,7 @@ img {
 
 .my_intro {
   max-width: 350px;
-
+  margin-top: 30px;
   background-color: var(--section-bg-clr);
   padding: 15px;
   border-radius: 10px;
