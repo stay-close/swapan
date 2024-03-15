@@ -16,7 +16,7 @@ $('.skills_section').owlCarousel({
             items:2
         },
         600:{
-            items:3
+            items:2
         },
         1000:{
             items:4
@@ -41,7 +41,7 @@ $('.profile_slider').owlCarousel({
             items:2
         },
         600:{
-            items:3
+            items:2
         },
         1000:{
             items:3
