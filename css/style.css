@@ -283,6 +283,9 @@ h3.section_heading i {
   gap: 25px;
   align-items: center;
 }
+.main_menu_area ul.nav .nav-item {
+  position: relative;
+}
 .main_menu_area nav .nav-link.active {
   color: var(--theme-clr);
 }
@@ -290,7 +293,6 @@ h3.section_heading i {
 .main_menu_area ul.nav a {
   color: var(--heading-text-clr);
   text-align: left;
-  position: relative;
   transition: all 0.3s linear;
 }
 
@@ -300,18 +302,15 @@ h3.section_heading i {
 
 .main_menu_area ul.nav a span {
   display: none;
-  position: absolute;
+  /* position: absolute;
   top: 0;
   left: -70px;
   margin-left: 10px;
-  border: 1px solid #2d2e2f;
+  border: 1px solid #2d2e2f; */
   padding: 5px 7px;
   border-radius: 5px;
 }
 
-.main_menu_area ul.nav a:hover span {
-  display: block;
-}
 .main_menu_area ul.nav a i {
   font-size: 18px;
 }
@@ -323,4 +322,12 @@ h3.section_heading i {
 .main_menu_area .navbar-brand p {
   display: none;
 }
+.tooltip-inner {
+  color: var(--theme-clr);
+  --bs-tooltip-bg: rgba(255, 255, 255, 0.2);
+}
+.tooltip-arrow::before {
+  border-left-color: rgba(255, 255, 255, 0.2) !important;
+}
+
 /* ====== Menu section CSS ====== */
