@@ -35,6 +35,7 @@ body,
 html {
   scroll-behavior: smooth;
   background-color: var(--body-bg-clr);
+  scroll-padding-top: 20px;
 }
 ul,
 ol {
@@ -227,7 +228,7 @@ h3.section_heading i {
 .services .accordion.servie_accordion {
   --bs-accordion-bg: var(--section-bg-clr);
 }
-.services .accordion.servie_accordion .accordion-item{
+.services .accordion.servie_accordion .accordion-item {
   border: 2px solid #2d2e2f;
 }
 .services .accordion.servie_accordion .accordion-button:not(.collapsed) {
@@ -260,6 +261,10 @@ h3.section_heading i {
   padding-bottom: 30px;
   text-align: center;
   height: fit-content;
+  position: fixed;
+  top: 50%;
+  right: 4%;
+  transform: translateY(-50%);
 }
 
 .main_menu_area button.navbar-toggler i {

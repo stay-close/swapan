@@ -40,6 +40,7 @@
     z-index: 1030;
     background-color: var(--section-bg-clr);
     border-radius: 0;
+    transform: translate(0);
   }
 
   .main_menu_area ul.nav {
