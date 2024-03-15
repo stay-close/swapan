@@ -45,8 +45,8 @@
     <section class="introduction_area">
       <div class="container">
         <div class="row">
-          <div class="col-3">
-            <div class="my_intro text-center mt-5">
+          <div class="col-12 col-lg-3 order-1 order-lg-0">
+            <div class="my_intro text-center">
               <div class="profile pb-3">
                 <div class="img_box mt-5 mb-2">
                   <picture>
@@ -80,20 +80,20 @@
               <div class="profile_skills">
                 <h5 class="text-start">Skills</h5>
                 <div class="skills">
-                  <ul>
-                    <li>
+                  <ul class="owl-carousel profile_slider">
+                    <li class="item">
                       <p>90%</p>
                       <h5>HTML</h5>
                     </li>
-                    <li>
+                    <li class="item">
                       <p>90%</p>
                       <h5>CSS</h5>
                     </li>
-                    <li>
+                    <li class="item">
                       <p>90%</p>
                       <h5>JS</h5>
                     </li>
-                    <li>
+                    <li class="item">
                       <p>90%</p>
                       <h5>BootStrap</h5>
                     </li>
@@ -109,7 +109,7 @@
             </div>
           </div>
           <!-- /col-3 -->
-          <div class="col-7">
+          <div class="col-12 col-lg-7 order-2 order-lg-1">
             <main class="main_content_area mt-5">
               <div class="home_content_area section_bg">
                 <h3 class="section_heading">
@@ -161,14 +161,57 @@
                   </div>
                 </div>
               </div>
+              <div class="about_me_area mt-5 section_bg">
+                <h3 class="section_heading">
+                  <i class="fa-solid fa-house-chimney"></i>
+                  <span>About Me</span>
+                </h3>
+                <div class="about_me_content">
+                  <div class="content">
+                    <div class="intro_content">
+                      <div class="intro">
+                        <h2>
+                          About
+                          <span>Me</span>
+                        </h2>
+                        <p>
+                          I am <span>Swapan Sarker.</span> Lorem ipsum dolor sit
+                          amet consectetur adipisicing elit. Deserunt enim
+                          distinctio rem repudiandae consequatur, odit eveniet
+                          mollitia similique veniam error, eius nemo neque animi
+                          explicabo, fugit porro quibusdam beatae molestias.
+                        </p>
+
+                        <div class="skills_section owl-carousel">
+                          <div class="single_skill item">
+                            <p>HTML & CSS (98%)</p>
+                          </div>
+                          <div class="single_skill item">
+                            <p>HTML & CSS (98%)</p>
+                          </div>
+                          <div class="single_skill item">
+                            <p>HTML & CSS (98%)</p>
+                          </div>
+                          <div class="single_skill item">
+                            <p>HTML & CSS (98%)</p>
+                          </div>
+                          <div class="single_skill item">
+                            <p>HTML & CSS (98%)</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <!-- /home content -->
             </main>
           </div>
           <!-- /col-7 -->
-          <div class="col-2 d-flex justify-content-center position_absolute">
-            <div class="main_menu_area mt-5">
-              <nav id="navbar-example3" class="navbar navbar-expand-lg">
-                <div class="container-fluid flex-column gap-5">
+          <div class="col-12 col-lg-2 order-0 order-lg-2">
+            <div class="main_menu_area">
+              <nav class="navbar navbar-expand-lg">
+                <div class="container flex-row flex-lg-column gap-5">
                   <a class="navbar-brand" href="#"
                     >S
                     <p>wapan sarker</p></a
@@ -182,7 +225,7 @@
                     aria-expanded="false"
                     aria-label="Toggle navigation"
                   >
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="fa-solid fa-bars-staggered"></i>
                   </button>
                   <div
                     class="collapse navbar-collapse"
@@ -191,44 +234,45 @@
                     <ul class="nav flex-column gap-3">
                       <li class="nav-item">
                         <a class="nav-link" href="#item-1">
-                          <span>home</span
-                          ><i class="fa-solid fa-house-chimney"></i
-                        ></a>
+                          <i class="fa-solid fa-house-chimney"></i>
+                          <span>home</span>
+                        </a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#item-2">
-                          <span>about</span><i class="fa-solid fa-user"></i
-                        ></a>
+                          <i class="fa-solid fa-user"></i>
+                          <span>about</span>
+                        </a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#item-3">
-                          <span>service</span
-                          ><i class="fa-solid fa-briefcase"></i
-                        ></a>
+                          <i class="fa-solid fa-briefcase"></i>
+                          <span>service</span>
+                        </a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#item-4">
+                          <i class="fa-solid fa-graduation-cap"></i>
                           <span>skills</span>
-                          <i class="fa-solid fa-graduation-cap"></i
-                        ></a>
+                        </a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#item-5">
-                          <span>resume</span
-                          ><i class="fa-solid fa-file-lines"></i
-                        ></a>
+                          <i class="fa-solid fa-file-lines"></i>
+                          <span>resume</span>
+                        </a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#item-6">
-                          <span>portfolios</span
-                          ><i class="fa-solid fa-laptop-code"></i
-                        ></a>
+                          <i class="fa-solid fa-laptop-code"></i>
+                          <span>portfolios</span>
+                        </a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#item-7">
-                          <span>contact</span
-                          ><i class="fa-solid fa-envelope"></i
-                        ></a>
+                          <i class="fa-solid fa-envelope"></i>
+                          <span>contact</span>
+                        </a>
                       </li>
                     </ul>
                   </div>
@@ -268,6 +312,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <!-- All slider js link -->
+    <script src="./js/slider.js"></script>
 
     <!-- Custom Js link -->
     <script src="js/app.js"></script>

@@ -1,1 +1,58 @@
+/* ========================= device (xs 0 > 576) ========================= */
+@media (max-width: 575.98px) {
+}
+/* ========================= device (xs 0 > 576) ========================= */
 
+/* ========================= device (sm 576 > 768) ========================= */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+/* ========================= device (sm 576 > 768) ========================= */
+
+/* ========================= device (md 768 > 992) ========================= */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+/* ========================= device (md 768 > 992) ========================= */
+
+/* ========================= device (lg 992 > 1200) ========================= */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+/* ========================= device (lg 992 > 1200) ========================= */
+
+/* ========================= device (xl 1200 > 1400) ========================= */
+@media (min-width: 1200px) and (max-width: 1400px) {
+}
+/* ========================= device (xl 1200 > 1400) ========================= */
+
+/* ========================= device (xxl 1400 >>) ========================= */
+@media (min-width: 1400px) {
+}
+/* ========================= device (xxl 1400 >>) ========================= */
+
+@media (max-width: 991px) {
+  .main_menu_area {
+    max-width: 100%;
+    padding: 0 20px;
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: var(--section-bg-clr);
+    border-radius: 0;
+  }
+
+  .main_menu_area ul.nav {
+    max-width: fit-content;
+    margin-left: auto;
+  }
+
+  .main_menu_area nav a span {
+    display: inline-block;
+    position: initial;
+    border: none;
+  }
+  .my_intro {
+    margin-top: 135px;
+  }
+}

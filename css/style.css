@@ -194,6 +194,7 @@ h3.section_heading i {
   padding: 15px 35px;
   font-size: 16px;
 }
+
 /* home area */
 
 /* ====Main content area css end */
@@ -204,15 +205,26 @@ h3.section_heading i {
   border: 2px solid #2d2e2f;
   max-width: fit-content;
   border-radius: 50px;
-  padding: 20px;
+  padding-bottom: 30px;
   text-align: center;
   height: fit-content;
 }
+
+.main_menu_area button.navbar-toggler i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--heading-text-clr);
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--section-bg-clr);
+}
 .main_menu_area nav a {
   color: var(--heading-text-clr);
-  position: relative;
-
   text-align: left;
+  position: relative;
 }
 .main_menu_area nav a:hover {
   color: var(--theme-clr);
@@ -221,7 +233,8 @@ h3.section_heading i {
   display: none;
   position: absolute;
   top: 0;
-  left: -110%;
+  left: -70px;
+  margin-left: 10px;
   border: 1px solid #2d2e2f;
   padding: 5px 7px;
   border-radius: 5px;
