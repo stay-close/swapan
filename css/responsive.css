@@ -58,4 +58,8 @@
   .about_details ul {
     grid-template-columns: 1fr;
   }
+  .main_menu_area nav a {
+    display: flex;
+    align-items: center;
+  }
 }
