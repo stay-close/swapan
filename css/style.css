@@ -42,9 +42,7 @@ ol {
   padding: 0;
   list-style-type: none;
 }
-a {
-  text-transform: capitalize;
-}
+
 a.btn {
   text-decoration: none;
   display: inline-block;
@@ -196,6 +194,33 @@ h3.section_heading i {
 }
 
 /* home area */
+
+/* About me area */
+
+.single_skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px;
+  border: 2px solid #2d2e2f;
+  border-radius: 30px;
+}
+.single_skill p {
+  margin-bottom: 0;
+}
+.about_details ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 100px;
+  justify-content: space-between;
+}
+.about_details ul li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #2d2e2f;
+  margin-bottom: 15px;
+}
+/* About me area */
 
 /* ====Main content area css end */
 
