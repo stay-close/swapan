@@ -222,6 +222,33 @@ h3.section_heading i {
 }
 /* About me area */
 
+/* Service area */
+
+.services .accordion.servie_accordion {
+  --bs-accordion-bg: var(--section-bg-clr);
+}
+.services .accordion.servie_accordion .accordion-item{
+  border: 2px solid #2d2e2f;
+}
+.services .accordion.servie_accordion .accordion-button:not(.collapsed) {
+  background-color: transparent;
+}
+.services .accordion.servie_accordion .accordion-button {
+  color: #fff;
+}
+.services .accordion.servie_accordion .accordion-button:focus {
+  box-shadow: none;
+}
+.services .accordion.servie_accordion .accordion-button::after {
+  content: "\f107";
+  font-family: "FontAwesome";
+}
+
+.services h2.service_num {
+  font-size: 18px;
+}
+/* Service area */
+
 /* ====Main content area css end */
 
 /* ====== Menu section CSS ====== */
