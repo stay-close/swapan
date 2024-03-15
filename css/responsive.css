@@ -55,4 +55,7 @@
   .my_intro {
     margin-top: 135px;
   }
+  .about_details ul {
+    grid-template-columns: 1fr;
+  }
 }
