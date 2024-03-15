@@ -46,9 +46,15 @@
   .main_menu_area ul.nav {
     max-width: fit-content;
     margin-left: auto;
+    align-items: start;
+    gap: 0;
   }
+  .main_menu_area nav .nav-link.active {
+    color: var(--theme-clr);
 
-  .main_menu_area nav a span {
+    justify-content: baseline;
+  }
+  .main_menu_area ul.nav a span {
     display: inline-block;
     position: initial;
     border: none;

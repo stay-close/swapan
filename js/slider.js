@@ -10,7 +10,7 @@ $('.skills_section').owlCarousel({
     autoplaySpeed: 6000,
     autoplayHoverPause: true,
     margin:10,
-    nav:true,
+    nav:false,
     responsive:{
         0:{
             items:1
@@ -35,7 +35,8 @@ $('.profile_slider').owlCarousel({
     autoplaySpeed: 6000,
     autoplayHoverPause: true,
     margin:10,
-    nav:true,
+    nav:false,
+    dots:false,
     responsive:{
         0:{
             items:2

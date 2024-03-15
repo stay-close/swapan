@@ -120,9 +120,10 @@ img {
 /* profile intro */
 
 .my_intro {
+  max-width: 350px;
+
   background-color: var(--section-bg-clr);
   padding: 15px;
-  max-width: 450px;
   border-radius: 10px;
   clip-path: polygon(0 0, 55% 0, 62% 6%, 100% 6%, 100% 100%, 0 100%);
 }
@@ -278,15 +279,26 @@ h3.section_heading i {
   border-radius: 50%;
   background: var(--section-bg-clr);
 }
-.main_menu_area nav a {
+.main_menu_area ul.nav {
+  gap: 25px;
+  align-items: center;
+}
+.main_menu_area nav .nav-link.active {
+  color: var(--theme-clr);
+}
+
+.main_menu_area ul.nav a {
   color: var(--heading-text-clr);
   text-align: left;
   position: relative;
+  transition: all 0.3s linear;
 }
-.main_menu_area nav a:hover {
+
+.main_menu_area ul.nav a:hover {
   color: var(--theme-clr);
 }
-.main_menu_area nav a span {
+
+.main_menu_area ul.nav a span {
   display: none;
   position: absolute;
   top: 0;
@@ -296,10 +308,11 @@ h3.section_heading i {
   padding: 5px 7px;
   border-radius: 5px;
 }
-.main_menu_area nav a:hover span {
+
+.main_menu_area ul.nav a:hover span {
   display: block;
 }
-.main_menu_area nav a i {
+.main_menu_area ul.nav a i {
   font-size: 18px;
 }
 .main_menu_area .navbar-brand {
