@@ -251,6 +251,43 @@ h3.section_heading i {
 }
 /* Service area */
 
+/* Main Skills Area */
+
+.main_skills .skill .skill_icon {
+  width: 80px;
+  height: 80px;
+}
+.main_skills .skill .skill_icon img {
+  filter: grayscale(50%);
+}
+.main_skills .skill .round_progress p {
+  font-size: 20px;
+}
+
+/* Main Skills Area */
+
+/* Resume area  */
+
+.company_name p.c_name {
+  color: var(--heading-text-clr);
+  font-weight: var(--font-weight-500);
+  margin-bottom: 0;
+}
+.education_details ul li,
+.experiences ul li {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  border-bottom: 1px solid #2d2e2f;
+  align-items: center;
+}
+.experiences ul li:last-child {
+  border-bottom: none;
+}
+.experience_details h4.position{
+  margin-top: 15px;
+}
+/* Resume area  */
+
 /* ====Main content area css end */
 
 /* ====== Menu section CSS ====== */
