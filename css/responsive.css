@@ -73,4 +73,17 @@
   .tooltip-inner {
     display: none;
   }
+  .contact {
+    grid-template-columns: 1fr;
+  }
+  .education_details ul li,
+  .experiences ul li {
+    gap: 10px;
+  }
+  .main_menu_area .navbar-brand p {
+    display: block;
+    margin-bottom: 14px;
+    align-self: end;
+    font-size: 20px;
+}
 }
