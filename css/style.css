@@ -348,6 +348,10 @@ h3.section_heading i {
   color: #fff;
   margin-bottom: 15px;
 }
+.input_group textarea::placeholder,
+.input_group input::placeholder {
+  color: var(--para-text-clr);
+}
 .input_group textarea,
 .input_group input {
   padding: 10px;
@@ -358,8 +362,11 @@ h3.section_heading i {
   color: #fff;
 }
 .input_group textarea:focus,
-.input_group input:focus {
+.input_group input.form-control:focus {
   border: 2px solid var(--theme-clr);
+  background: transparent;
+  box-shadow: none;
+  color: #fff;
 }
 .contact_form .submit_btn button {
   outline: none;

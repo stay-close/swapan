@@ -884,23 +884,41 @@
                         </li>
                       </ul>
                     </div>
-                    <form class="contact_form">
+                    <form
+                      class="contact_form needs-validation"
+                      onsubmit="reset()"
+                    >
                       <div class="input_group">
                         <label for="name">Name:</label>
                         <input
+                          class="form-control"
                           type="text"
                           name="name"
                           id="name"
                           placeholder="Full Name"
+                          required
                         />
                       </div>
                       <div class="input_group">
                         <label for="email">Email:</label>
                         <input
+                          class="form-control"
                           type="email"
                           name="email"
                           id="email"
                           placeholder="Email"
+                          required
+                        />
+                      </div>
+                      <div class="input_group">
+                        <label for="subject">Subject:</label>
+                        <input
+                          class="form-control"
+                          type="text"
+                          name="subject"
+                          id="subject"
+                          placeholder="Subject"
+                          required
                         />
                       </div>
                       <div class="input_group">
@@ -911,10 +929,13 @@
                           cols="30"
                           rows="5"
                           placeholder="Message"
+                          required
                         ></textarea>
                       </div>
                       <div class="submit_btn mt-4">
-                        <button type="submit">Send Message</button>
+                        <button class="send_message" type="submit">
+                          Send Message
+                        </button>
                       </div>
                     </form>
                   </div>
@@ -1070,6 +1091,12 @@
       integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Email js Link -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
     ></script>
 
     <!-- Progress Bar js link -->
