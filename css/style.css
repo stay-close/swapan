@@ -252,10 +252,6 @@ h3.section_heading i {
 .services h2.service_num {
   font-size: 18px;
 }
-/* .services .accordion-body ul li p {
-  display: grid;
-  grid-template-columns: max-content max-content;
-} */
 
 .services .accordion-body ul li p i {
   color: var(--theme-clr);
@@ -289,7 +285,7 @@ h3.section_heading i {
   margin-bottom: 0;
 }
 .education_details ul li,
-.experiences ul li {
+.experiences > ul > li {
   display: grid;
   grid-template-columns: 2fr 3fr;
   border-bottom: 1px solid #2d2e2f;
@@ -301,6 +297,19 @@ h3.section_heading i {
 }
 .experience_details h4.position {
   margin-top: 15px;
+  font-size: 18px;
+}
+.experiences .experience_details ol li {
+  display: flex;
+  gap: 8px;
+  color: var(--para-text-clr);
+  font-size: var(--para-font-size);
+  font-weight: var(--para-font-weight);
+  margin-bottom: 10px;
+}
+.experiences .experience_details ol li i {
+  color: var(--theme-clr);
+  margin-top: 3px;
 }
 /* Resume area  */
 
