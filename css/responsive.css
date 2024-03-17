@@ -64,6 +64,7 @@
   }
   .my_intro {
     margin-top: 120px;
+    max-width: 100%;
   }
   .about_details ul {
     grid-template-columns: 1fr;
