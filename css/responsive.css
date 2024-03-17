@@ -29,6 +29,9 @@
 /* ========================= device (xxl 1400 >>) ========================= */
 
 @media (max-width: 991px) {
+  .section_bg {
+    padding: 10px;
+  }
   .main_menu_area {
     max-width: 100%;
     padding: 0 20px;
@@ -82,9 +85,9 @@
   }
   .main_menu_area .navbar-brand p {
     display: block;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
     align-self: end;
-    font-size: 20px;
+    font-size: 16px;
   }
   .education_details ul li,
   .experiences > ul > li {
@@ -92,5 +95,21 @@
   }
   .company_name p:last-child {
     margin-bottom: 0;
+  }
+
+  .contact_left ul li {
+    gap: 7px;
+  }
+  .contact_left .contact_icon i {
+    font-size: 30px;
+  }
+  .under_const {
+    font-size: 20px;
+  }
+  .intro h2 {
+    font-size: 40px;
+  }
+  .contact_form .submit_btn button {
+    width: 100%;
   }
 }
