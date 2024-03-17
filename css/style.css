@@ -110,7 +110,7 @@ img {
 }
 .section_bg {
   background-color: var(--section-bg-clr);
-  padding: 20px;
+  padding: 40px 30px;
   border-radius: 10px;
 }
 /* ======== reset and common css ========*/

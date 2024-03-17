@@ -30,7 +30,7 @@
 
 @media (max-width: 991px) {
   .section_bg {
-    padding: 10px;
+    padding: 20px 10px;
   }
   .main_menu_area {
     max-width: 100%;
