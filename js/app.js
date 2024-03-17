@@ -26,7 +26,7 @@ $(function(){
  const templeteId='template_ufdv3e8';
 
  submitBtn.addEventListener('click',e=>{
-  e.preventDefault()
+ 
   const name= document.querySelector('#name').value
    const email= document.querySelector('#email').value
    const subject= document.querySelector('#subject').value
@@ -37,7 +37,12 @@ $(function(){
     subject:subject ,
     message: message,
   }
- emailjs.send(serviceId,templeteId,infos)
- .then(alert('Your Email has been sent!'))
+  if(name!='' && email!='' && subject!=''&& message!=''){
+    emailjs.send(serviceId,templeteId,infos)
+    .then(alert('Your Email has been sent!'))
+  }else{
+    alert('Please fill all the field!')
+  }
+ 
  })
 

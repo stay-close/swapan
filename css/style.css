@@ -362,7 +362,7 @@ h3.section_heading i {
   color: #fff;
 }
 .input_group textarea:focus,
-.input_group input.form-control:focus {
+.input_group input:focus {
   border: 2px solid var(--theme-clr);
   background: transparent;
   box-shadow: none;
