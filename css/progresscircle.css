@@ -16,7 +16,11 @@
   width: 60px;
   height: 60px;
 }
-
+.main_skills .skill .circle-chart {
+  width: 150px;
+  height: 150px;
+  margin: 30px 0;
+}
 .circle-chart__circle {
   stroke: #00acc1;
   stroke-width: 2;
