@@ -78,12 +78,19 @@
   }
   .education_details ul li,
   .experiences ul li {
-    gap: 10px;
+    grid-template-columns: 1fr;
   }
   .main_menu_area .navbar-brand p {
     display: block;
     margin-bottom: 14px;
     align-self: end;
     font-size: 20px;
-}
+  }
+  .education_details ul li,
+  .experiences > ul > li {
+    margin-bottom: 20px;
+  }
+  .company_name p:last-child {
+    margin-bottom: 0;
+  }
 }
