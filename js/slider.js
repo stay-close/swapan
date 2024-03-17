@@ -26,7 +26,7 @@ $('.skills_section').owlCarousel({
 
 // Profile section skills slider
 $('.profile_slider').owlCarousel({
-    rtl:true,
+   
     center:true,
     loop:true,
     slideTransition: 'linear',

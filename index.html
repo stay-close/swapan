@@ -32,6 +32,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Progress Bar Css link -->
+    <link rel="stylesheet" href="./css/progresscircle.css" />
 
     <!-- Custom CSS link -->
     <link rel="stylesheet" href="css/style.css" />
@@ -42,7 +44,7 @@
   <body>
     <!-- ======Introduction section start ====== -->
 
-    <section class="introduction_area">
+    <section class="site_body">
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-3 order-1 order-lg-0">
@@ -61,7 +63,7 @@
                   <p>Web Designer</p>
                 </div>
               </div>
-              <div class="profile_details mt-4 mb-1 p-3">
+              <div class="profile_details mt-3 p-3">
                 <ul>
                   <li>
                     <h5>Country</h5>
@@ -82,20 +84,28 @@
                 <div class="skills">
                   <ul class="owl-carousel profile_slider">
                     <li class="item">
-                      <p>90%</p>
-                      <h5>HTML</h5>
+                      <div class="circlechart" data-percentage="90"></div>
+                      <h3 class="skill_name mt-3">HTML</h3>
                     </li>
                     <li class="item">
-                      <p>90%</p>
-                      <h5>CSS</h5>
+                      <div class="circlechart" data-percentage="70"></div>
+                      <h3 class="skill_name mt-3">CSS</h3>
                     </li>
                     <li class="item">
-                      <p>90%</p>
-                      <h5>JS</h5>
+                      <div class="circlechart" data-percentage="60"></div>
+                      <h3 class="skill_name mt-3">JavaScript</h3>
                     </li>
                     <li class="item">
-                      <p>90%</p>
-                      <h5>BootStrap</h5>
+                      <div class="circlechart" data-percentage="30"></div>
+                      <h3 class="skill_name mt-3">ReactJS</h3>
+                    </li>
+                    <li class="item">
+                      <div class="circlechart" data-percentage="80"></div>
+                      <h3 class="skill_name mt-3">Tailwind</h3>
+                    </li>
+                    <li class="item">
+                      <div class="circlechart" data-percentage="90"></div>
+                      <h3 class="skill_name mt-3">BootStrap</h3>
                     </li>
                   </ul>
                 </div>
@@ -132,9 +142,9 @@
                           <span>Digital Landscape</span>
                         </h2>
                         <p>
-                          I am a <span>Frontend Developer</span> at heart and, i
-                          create features that are best suited for the job at
-                          hand.
+                          Hello! I'm <span>Swapan Sarker</span>, a passionate
+                          front-end developer with a knack for crafting engaging
+                          and responsive web experiences.
                         </p>
 
                         <div class="availabality mt-3 d-flex gap-5">
@@ -148,7 +158,7 @@
                           </p>
                         </div>
                         <div class="hire_btn mt-4">
-                          <a href="" class="btn">
+                          <a href="#contact_area" class="btn">
                             <i class="fa-solid fa-paper-plane mx-2"></i> hire
                             me</a
                           >
@@ -184,31 +194,40 @@
                           <span>Me</span>
                         </h2>
                         <p>
-                          I am <span>Swapan Sarker.</span> Lorem ipsum dolor sit
-                          amet consectetur adipisicing elit. Deserunt enim
-                          distinctio rem repudiandae consequatur, odit eveniet
-                          mollitia similique veniam error, eius nemo neque animi
-                          explicabo, fugit porro quibusdam beatae molestias.
+                          Welcome to my portfolio! I'm a dedicated
+                          <span>front-end developer</span> passionate about
+                          creating immersive and <span>user-centric</span> web
+                          experiences. With expertise in
+                          <span>HTML, CSS, and JavaScript</span>, as well as
+                          proficiency in frameworks like <span>React</span> and
+                          libraries such as <span>jQuery</span>, I specialize in
+                          bringing designs to life with
+                          <span>pixel-perfect</span> precision and seamless
+                          interactivity. Whether it's converting design mockups
+                          into code or optimizing for responsiveness across
+                          devices, I thrive on turning concepts into captivating
+                          digital realities. Explore my work and let's
+                          collaborate to elevate your online presence!
                         </p>
 
                         <div class="skills_section owl-carousel">
                           <div class="single_skill item">
-                            <p>HTML & CSS (98%)</p>
+                            <p>HTML5 & CSS3 (80%)</p>
                           </div>
                           <div class="single_skill item">
-                            <p>HTML & CSS (98%)</p>
+                            <p>JavaScript (60%)</p>
                           </div>
                           <div class="single_skill item">
-                            <p>HTML & CSS (98%)</p>
+                            <p>Tailwind CSS (80%)</p>
                           </div>
                           <div class="single_skill item">
-                            <p>HTML & CSS (98%)</p>
+                            <p>BootStrap (90%)</p>
                           </div>
                           <div class="single_skill item">
-                            <p>HTML & CSS (98%)</p>
+                            <p>ReactJS (30%)</p>
                           </div>
                         </div>
-                        <div class="about_details">
+                        <div class="about_details mt-4">
                           <ul>
                             <li>
                               <p>Phone:</p>
@@ -291,8 +310,9 @@
                         </h2>
                         <p>
                           I design products that are more than pretty. I make
-                          them shippable and usable,Lorem ipsum dolor, sit amet
-                          consectetur adipisicing elit. Sapiente, ducimus.
+                          them shippable and usable. <br />
+                          <strong>Driving Growth Through Technology: </strong
+                          >Explore Our Tailored Web Development Solutions
                         </p>
                       </div>
                     </div>
@@ -316,7 +336,7 @@
                             aria-controls="panelsStayOpen-collapseOne"
                           >
                             <h2 class="service_num">
-                              01. <span>Figma To HTML</span>
+                              01. <span>Front-end Development</span>
                             </h2>
                           </button>
                         </h2>
@@ -326,21 +346,21 @@
                           aria-labelledby="panelsStayOpen-headingOne"
                         >
                           <div class="accordion-body">
-                            <p>
-                              <strong
-                                >This is the first item's accordion
-                                body.</strong
-                              >
-                              It is shown by default, until the collapse plugin
-                              adds the appropriate classes that we use to style
-                              each element. These classes control the overall
-                              appearance, as well as the showing and hiding via
-                              CSS transitions. You can modify any of this with
-                              custom CSS or overriding our default variables.
-                              It's also worth noting that just about any HTML
-                              can go within the <code>.accordion-body</code>,
-                              though the transition does limit overflow.
-                            </p>
+                            <ul>
+                              <li>
+                                <p>
+                                  <i class="fa-solid fa-check-double"></i>
+
+                                  From concept to execution, we specialize in
+                                  crafting immersive and user-centric front-end
+                                  experiences using the latest web technologies
+                                  such as HTML5, CSS3, and JavaScript. Whether
+                                  you need a custom website, a web application,
+                                  or a landing page, we're here to bring your
+                                  vision to life.
+                                </p>
+                              </li>
+                            </ul>
                           </div>
                         </div>
                       </div>
@@ -358,7 +378,7 @@
                             aria-controls="panelsStayOpen-collapseTwo"
                           >
                             <h2 class="service_num">
-                              02. <span>PSD To HTML</span>
+                              02. <span>Responsive Design</span>
                             </h2>
                           </button>
                         </h2>
@@ -368,21 +388,20 @@
                           aria-labelledby="panelsStayOpen-headingTwo"
                         >
                           <div class="accordion-body">
-                            <p>
-                              <strong
-                                >This is the second item's accordion
-                                body.</strong
-                              >
-                              It is hidden by default, until the collapse plugin
-                              adds the appropriate classes that we use to style
-                              each element. These classes control the overall
-                              appearance, as well as the showing and hiding via
-                              CSS transitions. You can modify any of this with
-                              custom CSS or overriding our default variables.
-                              It's also worth noting that just about any HTML
-                              can go within the <code>.accordion-body</code>,
-                              though the transition does limit overflow.
-                            </p>
+                            <ul>
+                              <li>
+                                <p>
+                                  <i class="fa-solid fa-check-double"></i>
+                                  In today's multi-device world, having a
+                                  website that looks great and performs
+                                  flawlessly across all devices is crucial. Our
+                                  expertise in responsive design ensures that
+                                  your website adapts seamlessly to desktops,
+                                  tablets, and smartphones, providing a
+                                  consistent and optimal user experience.
+                                </p>
+                              </li>
+                            </ul>
                           </div>
                         </div>
                       </div>
@@ -400,7 +419,7 @@
                             aria-controls="panelsStayOpen-collapseThree"
                           >
                             <h2 class="service_num">
-                              03. <span>Sketch To HTML</span>
+                              03. <span>Custom Web Solutions</span>
                             </h2>
                           </button>
                         </h2>
@@ -410,21 +429,21 @@
                           aria-labelledby="panelsStayOpen-headingThree"
                         >
                           <div class="accordion-body">
-                            <p>
-                              <strong
-                                >This is the third item's accordion
-                                body.</strong
-                              >
-                              It is hidden by default, until the collapse plugin
-                              adds the appropriate classes that we use to style
-                              each element. These classes control the overall
-                              appearance, as well as the showing and hiding via
-                              CSS transitions. You can modify any of this with
-                              custom CSS or overriding our default variables.
-                              It's also worth noting that just about any HTML
-                              can go within the <code>.accordion-body</code>,
-                              though the transition does limit overflow.
-                            </p>
+                            <ul>
+                              <li>
+                                <p>
+                                  <i class="fa-solid fa-check-double"></i>
+
+                                  Need a custom web solution tailored to your
+                                  specific requirements? Whether it's a content
+                                  management system (CMS), an e-commerce
+                                  platform, or a web application, we'll work
+                                  closely with you to understand your needs and
+                                  develop a bespoke solution that meets your
+                                  goals.
+                                </p>
+                              </li>
+                            </ul>
                           </div>
                         </div>
                       </div>
@@ -442,7 +461,11 @@
                             aria-controls="panelsStayOpen-collapseFour"
                           >
                             <h2 class="service_num">
-                              04. <span>PDF / Images To HTML</span>
+                              04.
+                              <span
+                                >Figma /PSD / Sketch / PDF to HTML
+                                Conversion</span
+                              >
                             </h2>
                           </button>
                         </h2>
@@ -452,21 +475,20 @@
                           aria-labelledby="panelsStayOpen-headingFour"
                         >
                           <div class="accordion-body">
-                            <p>
-                              <strong
-                                >This is the third item's accordion
-                                body.</strong
-                              >
-                              It is hidden by default, until the collapse plugin
-                              adds the appropriate classes that we use to style
-                              each element. These classes control the overall
-                              appearance, as well as the showing and hiding via
-                              CSS transitions. You can modify any of this with
-                              custom CSS or overriding our default variables.
-                              It's also worth noting that just about any HTML
-                              can go within the <code>.accordion-body</code>,
-                              though the transition does limit overflow.
-                            </p>
+                            <ul>
+                              <li>
+                                <p>
+                                  <i class="fa-solid fa-check-double"></i>
+
+                                  Have a design mockup in PSD or Figma format?
+                                  We'll convert it into clean, semantic HTML/CSS
+                                  code, preserving every detail and ensuring
+                                  pixel-perfect accuracy. Let us handle the
+                                  technical aspects so you can focus on what you
+                                  do best – growing your business.
+                                </p>
+                              </li>
+                            </ul>
                           </div>
                         </div>
                       </div>
@@ -484,7 +506,7 @@
                             aria-controls="panelsStayOpen-collapseFive"
                           >
                             <h2 class="service_num">
-                              05. <span>Custom Website</span>
+                              05. <span>WordPress Development</span>
                             </h2>
                           </button>
                         </h2>
@@ -494,21 +516,21 @@
                           aria-labelledby="panelsStayOpen-headingFive"
                         >
                           <div class="accordion-body">
-                            <p>
-                              <strong
-                                >This is the third item's accordion
-                                body.</strong
-                              >
-                              It is hidden by default, until the collapse plugin
-                              adds the appropriate classes that we use to style
-                              each element. These classes control the overall
-                              appearance, as well as the showing and hiding via
-                              CSS transitions. You can modify any of this with
-                              custom CSS or overriding our default variables.
-                              It's also worth noting that just about any HTML
-                              can go within the <code>.accordion-body</code>,
-                              though the transition does limit overflow.
-                            </p>
+                            <ul>
+                              <li>
+                                <p>
+                                  <i class="fa-solid fa-check-double"></i>
+
+                                  As experts in WordPress development, we can
+                                  create custom themes, plugins, and solutions
+                                  tailored to your needs. Whether you're
+                                  launching a blog, an e-commerce store, or a
+                                  corporate website, WordPress offers endless
+                                  possibilities, and we're here to help you make
+                                  the most of it.
+                                </p>
+                              </li>
+                            </ul>
                           </div>
                         </div>
                       </div>
@@ -887,7 +909,7 @@
                           name="message"
                           id="message"
                           cols="30"
-                          rows="8"
+                          rows="5"
                           placeholder="Message"
                         ></textarea>
                       </div>
@@ -1049,6 +1071,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <!-- Progress Bar js link -->
+    <script src="./js/progresscircle.js"></script>
 
     <!-- All slider js link -->
     <script src="./js/slider.js"></script>

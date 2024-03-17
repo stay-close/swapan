@@ -121,7 +121,7 @@ img {
 
 .my_intro {
   max-width: 350px;
-  margin-top: 30px;
+  margin-top: 15px;
   background-color: var(--section-bg-clr);
   padding: 15px;
   border-radius: 10px;
@@ -148,6 +148,9 @@ img {
 }
 .profile_details ul li {
   justify-content: space-between;
+}
+.profile_details ul li .circlechart {
+  color: #fff;
 }
 .profile_skills {
   padding: 15px;
@@ -248,6 +251,18 @@ h3.section_heading i {
 
 .services h2.service_num {
   font-size: 18px;
+}
+/* .services .accordion-body ul li p {
+  display: grid;
+  grid-template-columns: max-content max-content;
+} */
+
+.services .accordion-body ul li p i {
+  color: var(--theme-clr);
+  margin-right: 10px;
+}
+.check_content {
+  color: var(--para-text-clr);
 }
 /* Service area */
 
