@@ -315,6 +315,82 @@ h3.section_heading i {
 
 /* portfolios area  */
 
+.all_portfolios {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.portfolio {
+  box-shadow: 4px 4px 10px -1px var(--body-bg-clr),
+    -4px -4px 10px -1px var(--body-bg-clr);
+  padding: 15px;
+  border-radius: 10px;
+  display: none;
+}
+.portfolio.always_active {
+  display: block;
+}
+.portfolio.active{
+  display: block;
+}
+.portfolio_img {
+  padding: 10px;
+  background: var(--body-bg-clr);
+
+  max-height: 250px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+.portfolio_img img {
+  height: 228px;
+  transition: all 0.3s linear;
+  filter: grayscale(100%);
+}
+.portfolio_img:hover img {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+.show_live_github {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  transform: translateY(-100%);
+  transition: all 0.3s linear;
+}
+.show_live_github .btn {
+  padding: 8px 20px;
+  font-size: 12px;
+}
+.show_live_github .btn:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+.portfolio_img:hover .show_live_github {
+  transform: translateY(0);
+}
+
+.load_more_btn {
+  outline: none;
+  border: 2px solid var(--theme-clr);
+  background: var(--theme-clr);
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s linear;
+}
+.load_more_btn:hover {
+  background: transparent;
+  border: 2px solid var(--theme-clr);
+}
 /* portfolios area  */
 
 /* contact area  */

@@ -46,3 +46,20 @@ $(function(){
  
  })
 
+//  load more portfolios
+
+const loadMoreBtn=document.querySelector('.load_more_btn');
+const allPortfolios=document.querySelectorAll('.portfolio');
+
+let currentItem=2;
+
+loadMoreBtn.addEventListener('click',()=>{
+for(let i=currentItem;i<currentItem+2;i++){
+allPortfolios[i].classList.add('active');
+}
+currentItem+=2;
+if(currentItem>=allPortfolios.length){
+  loadMoreBtn.style.display='none';
+}
+})
+
