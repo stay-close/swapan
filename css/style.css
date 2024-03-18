@@ -330,7 +330,7 @@ h3.section_heading i {
 .portfolio.always_active {
   display: block;
 }
-.portfolio.active{
+.portfolio.active {
   display: block;
 }
 .portfolio_img {
@@ -485,7 +485,13 @@ h3.section_heading i {
   right: 4%;
   transform: translateY(-50%);
 }
-
+.main_menu_area .navbar-toggler {
+  border: none;
+  box-shadow: none;
+}
+.main_menu_area .navbar-toggler:focus {
+  box-shadow: none;
+}
 .main_menu_area button.navbar-toggler i {
   display: flex;
   justify-content: center;
@@ -495,8 +501,11 @@ h3.section_heading i {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: var(--section-bg-clr);
+  background: var(--body-bg-clr);
+  box-shadow: 4px 4px 6px -1px rgba(0, 0, 0, 0.5),
+    -2px -2px 5px -1px rgba(255, 255, 255, 0.1);
 }
+
 .main_menu_area ul.nav {
   gap: 25px;
   align-items: center;
@@ -540,6 +549,7 @@ h3.section_heading i {
 .main_menu_area .navbar-brand p {
   display: none;
 }
+
 .tooltip-inner {
   color: var(--theme-clr);
   --bs-tooltip-bg: rgba(255, 255, 255, 0.2);
