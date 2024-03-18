@@ -30,7 +30,7 @@
 
 @media (max-width: 991px) {
   .section_bg {
-    padding: 20px 10px;
+    padding: 20px 15px;
   }
   .main_menu_area {
     max-width: 100%;
@@ -67,7 +67,7 @@
     margin-top: 120px;
     max-width: 90%;
     position: relative;
-    left: 0;
+   
   }
   .about_details ul {
     grid-template-columns: 1fr;
