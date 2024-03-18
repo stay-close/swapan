@@ -48,18 +48,70 @@ $(function(){
 
 //  load more portfolios
 
-const loadMoreBtn=document.querySelector('.load_more_btn');
-const allPortfolios=document.querySelectorAll('.portfolio');
+const loadMoreBtn=document.querySelectorAll('.load_more_btn');
 
-let currentItem=2;
 
-loadMoreBtn.addEventListener('click',()=>{
-for(let i=currentItem;i<currentItem+2;i++){
-allPortfolios[i].classList.add('active');
-}
-currentItem+=2;
-if(currentItem>=allPortfolios.length){
-  loadMoreBtn.style.display='none';
-}
-})
+const allHtmlCssPortfolios=document.querySelectorAll('.html_css_portfolios .portfolio');
+
+const allJavascriptPortfolios=document.querySelectorAll('.javascript_portfolios .portfolio');
+
+const allReactPortfolios=document.querySelectorAll('.react_portfolios .portfolio');
+
+let currentItemHtmlCss=2;
+let currentItemJavascript=2;
+let currentItemReact=2;
+
+
+loadMoreBtn.forEach((btn)=>{
+
+  btn.addEventListener('click',(e)=>{
+
+    if(btn.classList.contains('html_css_btn')){
+
+  
+      for(let i=currentItemHtmlCss;i<currentItemHtmlCss+2;i++){
+            allHtmlCssPortfolios[i].classList.add('active');
+            
+      }
+      currentItemHtmlCss+=2;
+      if(currentItemHtmlCss>=allHtmlCssPortfolios.length){
+        btn.style.display='none'
+       }
+
+    }else if(btn.classList.contains('javascript_btn')){
+
+      for(let i=currentItemJavascript;i<currentItemJavascript+2;i++){
+        allJavascriptPortfolios[i].classList.add('active');
+        
+         }
+         currentItemJavascript+=2;
+
+         if(currentItemJavascript>=allJavascriptPortfolios.length){
+          btn.style.display='none'
+         }
+     }else if(btn.classList.contains('react_btn')){
+
+      for(let i=currentItemReact;i<currentItemReact+2;i++){
+        allReactPortfolios[i].classList.add('active');
+        
+       }
+        currentItemReact+=2;
+        if(currentItemReact>=allReactPortfolios.length){
+          btn.style.display='none'
+         }
+      }
+
+    });
+
+});
+
+// loadMoreBtn.addEventListener('click',()=>{
+// for(let i=currentItem;i<currentItem+2;i++){
+// allPortfolios[i].classList.add('active');
+// }
+// currentItem+=2;
+// if(currentItem>=allPortfolios.length){
+//   loadMoreBtn.style.display='none';
+// }
+// })
 
