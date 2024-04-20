@@ -1,3 +1,9 @@
+// Alart
+
+window.alert('I Am Still Updating My Portfolio Website. Sorry for the inconvenience.')
+
+
+
 // Code for Main Menu Tooltip show on hover
 
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
